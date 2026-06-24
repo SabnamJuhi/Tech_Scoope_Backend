@@ -14,7 +14,7 @@ app.use(
   cors({
     origin: [
         "http://localhost:5173",
-      "https://tech-scoope-frontend.onrender.com"
+      "https://tech-scoope-frontend.vercel.app"
     ],
     credentials: true,
   })

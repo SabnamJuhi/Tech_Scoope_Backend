@@ -14,7 +14,7 @@ exports.initSocket = (server) => {
     cors: {
     origin: [
       "http://localhost:5173",
-      "https://tech-scoope-frontend.onrender.com"
+      "https://tech-scoope-frontend.vercel.app"
     ],
     methods: ["GET", "POST"],
     credentials: true
