@@ -7,10 +7,18 @@ let io;
 
 exports.initSocket = (server) => {
   io = new Server(server, {
+    // cors: {
+    //   origin: process.env.FRONTEND_URL,
+    //   credentials: true,
+    // },
     cors: {
-      origin: process.env.FRONTEND_URL,
-      credentials: true,
-    },
+    origin: [
+      "http://localhost:5173",
+      "https://tech-scoope-frontend.vercel.app"
+    ],
+    methods: ["GET", "POST"],
+    credentials: true
+  }
   });
 
   setIO(io);
